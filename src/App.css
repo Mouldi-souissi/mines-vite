@@ -1,0 +1,91 @@
+/* digital numbers font */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  font-family: "Orbitron", sans-serif;
+}
+
+/* grid */
+
+.grid {
+  display: grid;
+  /* justify-content: center; */
+}
+.small {
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: repeat(3, 80px);
+}
+.medium {
+  grid-template-columns: repeat(5, 80px);
+  grid-template-rows: repeat(5, 80px);
+}
+.big {
+  grid-template-columns: repeat(10, 40px);
+  grid-template-rows: repeat(10, 40px);
+}
+.cell {
+  /* center the cell content */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: Arial;
+  font-size: 1em;
+  font-weight: bold;
+  /* background: rgb(192, 186, 186); */
+  border-style: inset;
+  border-width: 3px;
+  border-color: rgb(179, 178, 178);
+}
+.cell:hover {
+  cursor: pointer;
+}
+.cell:focus {
+  outline: none;
+}
+
+.active {
+  background: white;
+  border: 1px solid grey;
+}
+
+.transparent {
+  color: transparent;
+}
+.red {
+  color: red;
+}
+.blue {
+  color: blue;
+}
+.green {
+  color: green;
+}
+
+button:focus {
+  outline: 0 !important;
+}
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.newgame {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.disable-zoom {
+  touch-action: manipulation;
+}
